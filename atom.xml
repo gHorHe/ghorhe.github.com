@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[gHorHe]]></title>
+  <title><![CDATA[Another Life Daemon]]></title>
   <link href="http://gHorHe.github.com/atom.xml" rel="self"/>
   <link href="http://gHorHe.github.com/"/>
-  <updated>2013-02-18T10:52:46+07:00</updated>
+  <updated>2013-02-18T10:54:43+07:00</updated>
   <id>http://gHorHe.github.com/</id>
   <author>
     <name><![CDATA[ghorhe]]></name>
