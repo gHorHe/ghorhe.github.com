@@ -6,12 +6,7 @@
 	<title>Another Life Daemon</title>
     <meta name="author" content="ghorhe">
     
-	<meta name="description" content="Published on: Feb 19th, 2013 Tags: Fedora, Scala Create typesafe repo file vim /etc/yum.repos.d/typesafe.repo (Typesafe.bash) download 1
-2
-3
-4
-5
-[ &hellip;">
+	<meta name="description" content="Published on: Feb 19th, 2013 Tags: Fedora, Linux, Octopress Prerequisites According to the RVM guide, you need a few prerequisites to install Ruby: &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -103,6 +98,144 @@
     <article class="post">
 	<h2 class="title">
 		
+		<a href="/blog/2013/02/19/installing-octopress-on-fedora-18/">
+		
+			Installing Octopress on Fedora 18</a>
+	</h2>
+    <div class="entry-content">
+    <div class="meta">
+      <div class="date">Published on: 
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-02-19T02:26:00+07:00" pubdate data-updated="true">Feb 19<span>th</span>, 2013</time></div>
+      <div class="tags">Tags: 
+
+
+	<a class='category' href='/blog/categories/fedora/'>Fedora</a>, <a class='category' href='/blog/categories/linux/'>Linux</a>, <a class='category' href='/blog/categories/octopress/'>Octopress</a>
+
+
+</div>
+    </div>
+		<h2>Prerequisites</h2>
+
+<p>According to the RVM guide, you need a few prerequisites to install Ruby:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>sudo yum install curl wget git-core
+</span><span class='line'>sudo yum install gcc zlib-devel make autoconf automake
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Installing RVM</h2>
+
+<p><a href="http://rvm.io/">RVM</a> is the Ruby Version Manager. RVM is a command-line tool which allows you to easily install, manage, and work with multiple ruby environments from interpreters to sets of gems.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="se">\c</span>url -L https://get.rvm.io | bash -s stable --ruby
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Installing Ruby</h2>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>Once Ruby is installed, ensure RVM has also installed the latest RubyGems:
+</span><span class='line'>
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> sh</p>
+
+<pre><code>rvm install 1.9.3
+rvm use 1.9.3
+rvm rubygems latest
+</code></pre>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>To check that it is properly installed, run these commands:
+</span><span class='line'>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> sh</p>
+
+<pre><code>type rvm | head -1
+# expected: rvm is a function
+which rvm
+# expected: ~/.rvm/bin/rvm
+</code></pre>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>
+</span><span class='line'>
+</span><span class='line'>Installing Octopress
+</span><span class='line'>--------------------
+</span><span class='line'>Now that you have the system all configured, you<span class="err">&#39;</span>re almost all ready to begin the Octopress setup.  Simply change directories to a suitable location <span class="k">for </span>your site repository.
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> sh
+git clone git://github.com/imathis/octopress.git octopress
+cd octopress    # If you use RVM, You&#8217;ll be asked if you trust the .rvmrc file (say yes).
+ruby &#8211;version  # Should report Ruby 1.9.3</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>Next, install dependencies.
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> sh
+gem install bundler
+bundle install</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>Install the default Octopress theme.
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> sh
+rake install</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>Source :
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p> sh
+https://gist.github.com/lowstz/1739538
+http://octopress.org/docs/setup/
+&#8220;`</p>
+
+		
+		
+	</div>
+
+<div class="meta">
+	
+</div>
+</article>
+
+
+    <article class="post">
+	<h2 class="title">
+		
 		<a href="/blog/2013/02/19/how-to-install-sbt-on-fedora-18/">
 		
 			How to Install Sbt on Fedora 18</a>
@@ -134,17 +267,17 @@
 
 <p>vim /etc/yum.repos.d/typesafe.repo</p>
 
-<figure class='code'><figcaption><span> (Typesafe.bash)</span> <a href='/downloads/code/Typesafe.bash'>download</a></figcaption>
+<figure class='code'><figcaption><span> (Typesafe)</span> <a href='/downloads/code/Typesafe'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="o">[</span>Typesafe<span class="o">]</span>
-</span><span class='line'><span class="nv">name</span> <span class="o">=</span> Typesafe RPM Repository
-</span><span class='line'><span class="nv">baseurl</span>  <span class="o">=</span> http://rpm.typesafe.com/
-</span><span class='line'><span class="nv">enabled</span>  <span class="o">=</span> 1
-</span><span class='line'><span class="nv">gpgcheck</span> <span class="o">=</span> 0
+</pre></td><td class='code'><pre><code class=''><span class='line'><span class="k">[Typesafe]</span>
+</span><span class='line'><span class="na">name</span> <span class="o">=</span> <span class="s">Typesafe RPM Repository</span>
+</span><span class='line'><span class="na">baseurl</span>  <span class="o">=</span> <span class="s">http://rpm.typesafe.com/</span>
+</span><span class='line'><span class="na">enabled</span>  <span class="o">=</span> <span class="s">1 </span>
+</span><span class='line'><span class="na">gpgcheck</span> <span class="o">=</span> <span class="s">0</span>
 </span></code></pre></td></tr></table></div></figure>
 
 

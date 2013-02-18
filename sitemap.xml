@@ -6,7 +6,11 @@
     </url>
     <url>
         <loc>http://gHorHe.github.com/blog/2013/02/19/how-to-install-sbt-on-fedora-18/</loc>
-        <lastmod>2013-02-19T02:14:11+07:00</lastmod>
+        <lastmod>2013-02-19T02:28:29+07:00</lastmod>
+    </url>
+    <url>
+        <loc>http://gHorHe.github.com/blog/2013/02/19/installing-octopress-on-fedora-18/</loc>
+        <lastmod>2013-02-19T02:44:12+07:00</lastmod>
     </url>
     <url>
         <loc>http://gHorHe.github.com/about/</loc>
@@ -18,7 +22,7 @@
     </url>
     <url>
         <loc>http://gHorHe.github.com/blog/archives/</loc>
-        <lastmod>2013-02-19T02:14:11+07:00</lastmod>
+        <lastmod>2013-02-19T02:44:12+07:00</lastmod>
     </url>
     <url>
         <loc>http://gHorHe.github.com/search.html</loc>
@@ -26,6 +30,6 @@
     </url>
     <url>
         <loc>http://gHorHe.github.com/</loc>
-        <lastmod>2013-02-19T02:14:11+07:00</lastmod>
+        <lastmod>2013-02-19T02:44:12+07:00</lastmod>
     </url>
 </urlset>

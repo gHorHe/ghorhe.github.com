@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Fedora | Another Life Daemon]]></title>
-  <link href="http://gHorHe.github.com/blog/categories/fedora/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Octopress | Another Life Daemon]]></title>
+  <link href="http://gHorHe.github.com/blog/categories/octopress/atom.xml" rel="self"/>
   <link href="http://gHorHe.github.com/"/>
   <updated>2013-02-19T02:44:21+07:00</updated>
   <id>http://gHorHe.github.com/</id>
@@ -92,34 +92,6 @@ rake install
 https://gist.github.com/lowstz/1739538
 http://octopress.org/docs/setup/
 </code></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How to install sbt on Fedora 18]]></title>
-    <link href="http://gHorHe.github.com/blog/2013/02/19/how-to-install-sbt-on-fedora-18/"/>
-    <updated>2013-02-19T01:21:00+07:00</updated>
-    <id>http://gHorHe.github.com/blog/2013/02/19/how-to-install-sbt-on-fedora-18</id>
-    <content type="html"><![CDATA[<p>Create typesafe repo file</p>
-
-<p>vim /etc/yum.repos.d/typesafe.repo</p>
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span> (Typesafe)</span> <a href='/downloads/code/Typesafe'>download</a></figcaption>
- <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'><span class="k">[Typesafe]</span>
-</span><span class='line'><span class="na">name</span> <span class="o">=</span> <span class="s">Typesafe RPM Repository</span>
-</span><span class='line'><span class="na">baseurl</span>  <span class="o">=</span> <span class="s">http://rpm.typesafe.com/</span>
-</span><span class='line'><span class="na">enabled</span>  <span class="o">=</span> <span class="s">1 </span>
-</span><span class='line'><span class="na">gpgcheck</span> <span class="o">=</span> <span class="s">0</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<p>and then install with yum</p>
-
-<h1>Sudo yum install -y typesafe-stack</h1>
 ]]></content>
   </entry>
   
