@@ -4,7 +4,7 @@
   <title><![CDATA[Another Life Daemon]]></title>
   <link href="http://gHorHe.github.com/atom.xml" rel="self"/>
   <link href="http://gHorHe.github.com/"/>
-  <updated>2013-02-18T11:07:03+07:00</updated>
+  <updated>2013-02-19T01:30:47+07:00</updated>
   <id>http://gHorHe.github.com/</id>
   <author>
     <name><![CDATA[ghorhe]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[How to install sbt on Fedora 18]]></title>
+    <link href="http://gHorHe.github.com/blog/2013/02/19/how-to-install-sbt-on-fedora-18/"/>
+    <updated>2013-02-19T01:21:00+07:00</updated>
+    <id>http://gHorHe.github.com/blog/2013/02/19/how-to-install-sbt-on-fedora-18</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Hello World]]></title>
