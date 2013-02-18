@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Another Life Daemon]]></title>
-  <link href="http://gHorHe.github.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Fedora | Another Life Daemon]]></title>
+  <link href="http://gHorHe.github.com/blog/categories/fedora/atom.xml" rel="self"/>
   <link href="http://gHorHe.github.com/"/>
   <updated>2013-02-19T02:12:48+07:00</updated>
   <id>http://gHorHe.github.com/</id>
@@ -27,21 +27,6 @@
 <p>and then install with yum</p>
 
 <h1>Sudo yum install -y typesafe-stack</h1>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Hello World]]></title>
-    <link href="http://gHorHe.github.com/blog/2013/02/18/hello-world/"/>
-    <updated>2013-02-18T07:32:00+07:00</updated>
-    <id>http://gHorHe.github.com/blog/2013/02/18/hello-world</id>
-    <content type="html"><![CDATA[<p>Scala</p>
-
-<div><script src='https://gist.github.com/4974720.js'></script>
-<noscript><pre><code></code></pre></noscript></div>
-
-
-
 ]]></content>
   </entry>
   

@@ -1,0 +1,5 @@
+[Typesafe]
+name = Typesafe RPM Repository
+baseurl  = http://rpm.typesafe.com/
+enabled  = 1 
+gpgcheck = 0
