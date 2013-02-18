@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Fedora | Another Life Daemon]]></title>
   <link href="http://gHorHe.github.com/blog/categories/fedora/atom.xml" rel="self"/>
   <link href="http://gHorHe.github.com/"/>
-  <updated>2013-02-19T02:12:48+07:00</updated>
+  <updated>2013-02-19T02:14:14+07:00</updated>
   <id>http://gHorHe.github.com/</id>
   <author>
     <name><![CDATA[ghorhe]]></name>
@@ -22,7 +22,18 @@
 
 <p>vim /etc/yum.repos.d/typesafe.repo</p>
 
-<p>File /home/ghorhe/Projects/octopress/source/downloads/code/Typesafe.repo could not be found</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span> (Typesafe.bash)</span> <a href='/downloads/code/Typesafe.bash'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="o">[</span>Typesafe<span class="o">]</span>
+</span><span class='line'><span class="nv">name</span> <span class="o">=</span> Typesafe RPM Repository
+</span><span class='line'><span class="nv">baseurl</span>  <span class="o">=</span> http://rpm.typesafe.com/
+</span><span class='line'><span class="nv">enabled</span>  <span class="o">=</span> 1
+</span><span class='line'><span class="nv">gpgcheck</span> <span class="o">=</span> 0
+</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>and then install with yum</p>
 

@@ -6,7 +6,12 @@
 	<title>Another Life Daemon</title>
     <meta name="author" content="ghorhe">
     
-	<meta name="description" content="Published on: Feb 19th, 2013 Tags: Fedora, Scala Create typesafe repo file vim /etc/yum.repos.d/typesafe.repo File /home/ghorhe/Projects/octopress/ &hellip;">
+	<meta name="description" content="Published on: Feb 19th, 2013 Tags: Fedora, Scala Create typesafe repo file vim /etc/yum.repos.d/typesafe.repo (Typesafe.bash) download 1
+2
+3
+4
+5
+[ &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -129,7 +134,19 @@
 
 <p>vim /etc/yum.repos.d/typesafe.repo</p>
 
-<p>File /home/ghorhe/Projects/octopress/source/downloads/code/Typesafe.repo could not be found</p>
+<figure class='code'><figcaption><span> (Typesafe.bash)</span> <a href='/downloads/code/Typesafe.bash'>download</a></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'><span class="o">[</span>Typesafe<span class="o">]</span>
+</span><span class='line'><span class="nv">name</span> <span class="o">=</span> Typesafe RPM Repository
+</span><span class='line'><span class="nv">baseurl</span>  <span class="o">=</span> http://rpm.typesafe.com/
+</span><span class='line'><span class="nv">enabled</span>  <span class="o">=</span> 1
+</span><span class='line'><span class="nv">gpgcheck</span> <span class="o">=</span> 0
+</span></code></pre></td></tr></table></div></figure>
+
 
 <p>and then install with yum</p>
 
