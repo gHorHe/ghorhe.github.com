@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Fedora | Another Life Daemon]]></title>
   <link href="http://gHorHe.github.com/blog/categories/fedora/atom.xml" rel="self"/>
   <link href="http://gHorHe.github.com/"/>
-  <updated>2013-02-19T02:44:21+07:00</updated>
+  <updated>2013-02-19T02:49:06+07:00</updated>
   <id>http://gHorHe.github.com/</id>
   <author>
     <name><![CDATA[ghorhe]]></name>
@@ -34,14 +34,16 @@ sudo yum install gcc zlib-devel make autoconf automake
 
 <p><a href="http://rvm.io/">RVM</a> is the Ruby Version Manager. RVM is a command-line tool which allows you to easily install, manage, and work with multiple ruby environments from interpreters to sets of gems.</p>
 
-<p><code>sh
-\curl -L https://get.rvm.io | bash -s stable --ruby
-</code></p>
+<p>``` sh</p>
+
+<pre><code>\curl -L https://get.rvm.io | bash -s stable --ruby
+</code></pre>
+
+<p>```</p>
 
 <h2>Installing Ruby</h2>
 
-<p>```
-Once Ruby is installed, ensure RVM has also installed the latest RubyGems:</p>
+<p>Once Ruby is installed, ensure RVM has also installed the latest RubyGems:</p>
 
 <p>``` sh</p>
 
@@ -82,8 +84,9 @@ gem install bundler
 bundle install
 </code></p>
 
-<p>Install the default Octopress theme.
-<code>sh
+<p>Install the default Octopress theme.</p>
+
+<p><code>sh
 rake install
 </code></p>
 
@@ -100,9 +103,13 @@ http://octopress.org/docs/setup/
     <link href="http://gHorHe.github.com/blog/2013/02/19/how-to-install-sbt-on-fedora-18/"/>
     <updated>2013-02-19T01:21:00+07:00</updated>
     <id>http://gHorHe.github.com/blog/2013/02/19/how-to-install-sbt-on-fedora-18</id>
-    <content type="html"><![CDATA[<p>Create typesafe repo file</p>
+    <content type="html"><![CDATA[<p>Create typesafe repo file
+``` sh</p>
 
-<p>vim /etc/yum.repos.d/typesafe.repo</p>
+<pre><code>vim /etc/yum.repos.d/typesafe.repo
+</code></pre>
+
+<p>```</p>
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><figcaption><span> (Typesafe)</span> <a href='/downloads/code/Typesafe'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -117,9 +124,13 @@ http://octopress.org/docs/setup/
 </span><span class='line'><span class="na">gpgcheck</span> <span class="o">=</span> <span class="s">0</span>
 </span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<p>and then install with yum</p>
+<p>and then install with yum
+``` sh</p>
 
-<h1>Sudo yum install -y typesafe-stack</h1>
+<pre><code>Sudo yum install -y typesafe-stack 
+</code></pre>
+
+<p>```</p>
 ]]></content>
   </entry>
   

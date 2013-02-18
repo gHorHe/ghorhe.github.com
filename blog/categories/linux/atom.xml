@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux | Another Life Daemon]]></title>
   <link href="http://gHorHe.github.com/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://gHorHe.github.com/"/>
-  <updated>2013-02-19T02:44:21+07:00</updated>
+  <updated>2013-02-19T02:49:06+07:00</updated>
   <id>http://gHorHe.github.com/</id>
   <author>
     <name><![CDATA[ghorhe]]></name>
@@ -34,14 +34,16 @@ sudo yum install gcc zlib-devel make autoconf automake
 
 <p><a href="http://rvm.io/">RVM</a> is the Ruby Version Manager. RVM is a command-line tool which allows you to easily install, manage, and work with multiple ruby environments from interpreters to sets of gems.</p>
 
-<p><code>sh
-\curl -L https://get.rvm.io | bash -s stable --ruby
-</code></p>
+<p>``` sh</p>
+
+<pre><code>\curl -L https://get.rvm.io | bash -s stable --ruby
+</code></pre>
+
+<p>```</p>
 
 <h2>Installing Ruby</h2>
 
-<p>```
-Once Ruby is installed, ensure RVM has also installed the latest RubyGems:</p>
+<p>Once Ruby is installed, ensure RVM has also installed the latest RubyGems:</p>
 
 <p>``` sh</p>
 
@@ -82,8 +84,9 @@ gem install bundler
 bundle install
 </code></p>
 
-<p>Install the default Octopress theme.
-<code>sh
+<p>Install the default Octopress theme.</p>
+
+<p><code>sh
 rake install
 </code></p>
 

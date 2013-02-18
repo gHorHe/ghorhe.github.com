@@ -4,7 +4,7 @@
   <title><![CDATA[Another Life Daemon]]></title>
   <link href="http://gHorHe.github.com/atom.xml" rel="self"/>
   <link href="http://gHorHe.github.com/"/>
-  <updated>2013-02-19T02:44:21+07:00</updated>
+  <updated>2013-02-19T02:49:06+07:00</updated>
   <id>http://gHorHe.github.com/</id>
   <author>
     <name><![CDATA[ghorhe]]></name>
@@ -40,81 +40,67 @@
 
 <h2>Installing Ruby</h2>
 
+<p>Once Ruby is installed, ensure RVM has also installed the latest RubyGems:</p>
+
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>Once Ruby is installed, ensure RVM has also installed the latest RubyGems:
-</span><span class='line'>
-</span><span class='line'>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>rvm install 1.9.3
+</span><span class='line'>rvm use 1.9.3
+</span><span class='line'>rvm rubygems latest
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p> sh</p>
-
-<pre><code>rvm install 1.9.3
-rvm use 1.9.3
-rvm rubygems latest
-</code></pre>
-
-<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>To check that it is properly installed, run these commands:
-</span><span class='line'>
-</span></code></pre></td></tr></table></div></figure>
-
-
-<p> sh</p>
-
-<pre><code>type rvm | head -1
-# expected: rvm is a function
-which rvm
-# expected: ~/.rvm/bin/rvm
-</code></pre>
+<p>To check that it is properly installed, run these commands:</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>
-</span><span class='line'>
-</span><span class='line'>Installing Octopress
-</span><span class='line'>--------------------
-</span><span class='line'>Now that you have the system all configured, you<span class="err">&#39;</span>re almost all ready to begin the Octopress setup.  Simply change directories to a suitable location <span class="k">for </span>your site repository.
+</pre></td><td class='code'><pre><code class='sh'><span class='line'><span class="nb">type </span>rvm | head -1
+</span><span class='line'><span class="c"># expected: rvm is a function</span>
+</span><span class='line'>which rvm
+</span><span class='line'><span class="c"># expected: ~/.rvm/bin/rvm</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p> sh
-git clone git://github.com/imathis/octopress.git octopress
-cd octopress    # If you use RVM, You&#8217;ll be asked if you trust the .rvmrc file (say yes).
-ruby &#8211;version  # Should report Ruby 1.9.3</p>
+<h2>Installing Octopress</h2>
+
+<p>Now that you have the system all configured, you&#8217;re almost all ready to begin the Octopress setup.  Simply change directories to a suitable location for your site repository.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>Next, install dependencies.
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>git clone git://github.com/imathis/octopress.git octopress
+</span><span class='line'><span class="nb">cd </span>octopress    <span class="c"># If you use RVM, You&#39;ll be asked if you trust the .rvmrc file (say yes).</span>
+</span><span class='line'>ruby --version  <span class="c"># Should report Ruby 1.9.3</span>
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p> sh
-gem install bundler
-bundle install</p>
+<p>Next, install dependencies.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>Install the default Octopress theme.
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>gem install bundler
+</span><span class='line'>bundle install
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p> sh
-rake install</p>
+<p>Install the default Octopress theme.</p>
 
 <figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class='sh'><span class='line'>Source :
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>rake install
 </span></code></pre></td></tr></table></div></figure>
 
 
-<p> sh
-https://gist.github.com/lowstz/1739538
-http://octopress.org/docs/setup/
-&#8220;`</p>
+<p>Source :</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>https://gist.github.com/lowstz/1739538
+</span><span class='line'>http://octopress.org/docs/setup/
+</span></code></pre></td></tr></table></div></figure>
+
 ]]></content>
   </entry>
   
@@ -125,7 +111,12 @@ http://octopress.org/docs/setup/
     <id>http://gHorHe.github.com/blog/2013/02/19/how-to-install-sbt-on-fedora-18</id>
     <content type="html"><![CDATA[<p>Create typesafe repo file</p>
 
-<p>vim /etc/yum.repos.d/typesafe.repo</p>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>vim /etc/yum.repos.d/typesafe.repo
+</span></code></pre></td></tr></table></div></figure>
+
+
+
 
 <figure class='code'><figcaption><span> (Typesafe)</span> <a href='http://gHorHe.github.com/downloads/code/Typesafe'>download</a></figcaption>
  <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
@@ -143,7 +134,10 @@ http://octopress.org/docs/setup/
 
 <p>and then install with yum</p>
 
-<h1>Sudo yum install -y typesafe-stack</h1>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='sh'><span class='line'>Sudo yum install -y typesafe-stack
+</span></code></pre></td></tr></table></div></figure>
+
 ]]></content>
   </entry>
   
@@ -152,9 +146,7 @@ http://octopress.org/docs/setup/
     <link href="http://gHorHe.github.com/blog/2013/02/18/hello-world/"/>
     <updated>2013-02-18T07:32:00+07:00</updated>
     <id>http://gHorHe.github.com/blog/2013/02/18/hello-world</id>
-    <content type="html"><![CDATA[<p>Scala</p>
-
-<div><script src='https://gist.github.com/4974720.js'></script>
+    <content type="html"><![CDATA[<div><script src='https://gist.github.com/4974720.js'></script>
 <noscript><pre><code></code></pre></noscript></div>
 
 
