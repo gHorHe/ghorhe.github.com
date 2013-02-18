@@ -1,16 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[gHorHe]]></title>
   <link href="http://gHorHe.github.com/atom.xml" rel="self"/>
   <link href="http://gHorHe.github.com/"/>
-  <updated>2013-02-18T07:00:17+07:00</updated>
+  <updated>2013-02-18T08:57:05+07:00</updated>
   <id>http://gHorHe.github.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[ghorhe]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Hello World]]></title>
+    <link href="http://gHorHe.github.com/blog/2013/02/18/hello-world/"/>
+    <updated>2013-02-18T07:32:00+07:00</updated>
+    <id>http://gHorHe.github.com/blog/2013/02/18/hello-world</id>
+    <content type="html"><![CDATA[<p>object HelloWorld {</p>
+
+<pre><code>def main(args: Array[String]) {
+  println("Hello, world!")
+}
+</code></pre>
+
+<p>  }</p>
+]]></content>
+  </entry>
   
 </feed>

@@ -3,10 +3,11 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Blog Archives - gHorHe</title>
+	<title>Hello World - gHorHe</title>
     <meta name="author" content="ghorhe">
     
-	<meta name="description" content=" 2013 Hello World Feb 18 ">
+	<meta name="description" content="object HelloWorld { def main(args: Array[String]) { println("Hello, world!")
+} } ">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -91,24 +92,42 @@
 <div id="toload">
 <!-- begin toload --> 
     <div id="content" class="inner">
-        
+        <article class="post">
+	<h2 class="title">Hello World</h2>
+	<div class="entry-content"><p>object HelloWorld {</p>
+
+<pre><code>def main(args: Array[String]) {
+  println("Hello, world!")
+}
+</code></pre>
+
+<p>  }</p>
+</div>
+
+<div class="meta">
 	
-
-
-	
-	
-	<section class="archives"><h1 class="year">2013</h1>
-
-<article>
-	<h2 class="title"><a href="/blog/2013/02/18/hello-world/">Hello World</a></h2>
-	<div class="meta">
-		<span class="date">Feb 18</span>
-		<span class="tags">
-
-</span>
-	    
-	</div>
+</div>
 </article>
+
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+	
+	
+	<a class="addthis_button_tweet"></a>
+	
+	
+	<a class="addthis_counter addthis_pill_style"></a>
+	</div>
+  <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid="></script>
+</div>
+
+
+
+<section id="comment">
+    <h2 class="title">Comments</h2>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+</section>
 
     </div>
     <footer id="footer">
@@ -135,7 +154,10 @@
       var disqus_shortname = 'ghorhe';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://gHorHe.github.com/blog/2013/02/18/hello-world/';
+        var disqus_url = 'http://gHorHe.github.com/blog/2013/02/18/hello-world/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
